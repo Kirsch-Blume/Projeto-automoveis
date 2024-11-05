@@ -1,5 +1,23 @@
-.navbar {
-  background-color: rgb(224, 187, 127) !important;
+.form-control-dark {
+  border-color: var(--bs-gray);
+}
+.form-control-dark:focus {
+  border-color: #fff;
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
 }
 
-.navbar a{color: rgb(44, 44, 44);}
+.text-small {
+  font-size: 85%;
+}
+
+.dropdown-toggle:not(:focus) {
+  outline: 0;
+}
+
+.carousel-item img {
+  height: 80vh;
+  object-fit: cover;
+}
+html {
+  scroll-behavior: smooth;
+}
