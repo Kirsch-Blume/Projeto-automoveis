@@ -14,7 +14,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,42 +24,51 @@
   </head>
   <body>
     <div class="container-fluid">
-      <header
-        class="d-flex flex-wrap align-items-center justify-content-center py-1 mb-4 border-bottom"
-      >
-        <img
-          src="logo-placeholder-image.png"
-          alt="Logo"
-          width="120"
-          height="120"
-          class="me-3"
-        />
-
-        <a
-          href="/"
-          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-        >
-          <svg class="bi me-2" width="40" height="32">
-            <use xlink:href="#bootstrap"></use>
-          </svg>
-          <span class="fs-4">Nome da empresa</span>
-        </a>
-
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a href="#" class="nav-link" aria-current="page">Início</a>
-          </li>
-          <li class="nav-item">
-            <a href="#sobre-nos" class="nav-link">Sobre nós</a>
-          </li>
-          <li class="nav-item">
-            <a href="#nossos-carros" class="nav-link">Carros</a>
-          </li>
-          <li class="nav-item">
-            <a href="contato.html" class="nav-link active">Contato</a>
-          </li>
-        </ul>
-      </header>
+      <nav class="navbar navbar-expand-lg border-bottom my-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="logo-placeholder-image.png"
+              alt=""
+              style="width: 100px; height: auto"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Início</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#sobre-nos"
+                  >Sobre nós</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#nossos-carros"
+                  >Carros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="contato.html"
+                  >Contato</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
 
     <main>
@@ -71,7 +80,7 @@
               <label for="nome" class="form-label">Nome</label>
               <input
                 type="text"
-                class="form-control"
+                class="form-control form-control-lg"
                 id="nome"
                 placeholder="Seu nome"
                 required
@@ -81,7 +90,7 @@
               <label for="email" class="form-label">Email</label>
               <input
                 type="email"
-                class="form-control"
+                class="form-control form-control-lg"
                 id="email"
                 placeholder="Seu email"
                 required
@@ -93,7 +102,7 @@
             <label for="whatsapp" class="form-label">WhatsApp</label>
             <input
               placeholder="Ex: (00) 00000-0000"
-              class="form-control phone_with_ddd"
+              class="form-control form-control-lg phone_with_ddd"
               type="text"
               id="whatsapp"
               required
@@ -103,16 +112,17 @@
           <div class="mb-3">
             <label for="mensagem" class="form-label">Mensagem</label>
             <textarea
-              class="form-control"
+              class="form-control form-control-lg"
               id="mensagem"
               rows="4"
-              placeholder="Escreva sua mensagem"
+              placeholder="Escreva sua mensagem (Opcional)"
             ></textarea>
           </div>
 
           <div class="mb-3">
             <label for="item" class="form-label">Item de Interesse</label>
-            <select id="item" class="form-select">
+            <select id="item" class="form-select form-select-lg">
+              <option value="">Selecione seu carro</option>
               <option value="Carro 1">Carro 1</option>
               <option value="Carro 2">Carro 2</option>
               <option value="Carro 3">Carro 3</option>
@@ -125,7 +135,12 @@
           </div>
 
           <div class="d-flex justify-content-center">
-            <button type="submit" class="btn btn-primary w-100 py-3">Enviar</button>
+            <button
+              type="submit"
+              class="btn btn-primary w-100 py-2 mt-3 btn-lg"
+            >
+              Enviar
+            </button>
           </div>
         </form>
       </div>
@@ -190,6 +205,6 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="main.js"></script>
-    <script src="scripts.js?v=1.0"></script>
+    <script src="scripts.js?v=1.1"></script>
   </body>
 </html>

@@ -40,7 +40,10 @@ header * {
   background-color: black !important;
 }
 @media only screen and (max-width: 600px) {
-  .btn-cta{
+  .btn-cta {
     align-self: center;
   }
+}
+.navbar-nav .nav-link {
+font-size: 1.3rem;
 }
