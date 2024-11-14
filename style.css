@@ -47,3 +47,6 @@ header * {
 .navbar-nav .nav-link {
 font-size: 1.3rem;
 }
+.card-img-top {
+  height: 250px;
+}
