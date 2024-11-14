@@ -1,4 +1,4 @@
-*{
+* {
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -25,6 +25,7 @@
 .carousel-item img {
   height: 80vh;
   object-fit: cover;
+  opacity: 0.7;
 }
 html {
   scroll-behavior: smooth;
@@ -32,6 +33,14 @@ html {
 .sem-sublinhado {
   text-decoration: none !important;
 }
-header *{
+header * {
   font-size: 20px !important;
+}
+.carousel-inner {
+  background-color: black !important;
+}
+@media only screen and (max-width: 600px) {
+  .btn-cta{
+    align-self: center;
+  }
 }
