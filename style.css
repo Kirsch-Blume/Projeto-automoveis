@@ -50,3 +50,7 @@ font-size: 1.3rem;
 .card-img-top {
   height: 250px;
 }
+.carro {
+  object-fit: contain;
+  height: 500px;
+}
